@@ -68,6 +68,10 @@ body.dark .nav-links button {
   color: #f1f5f9;
 }
 
+body.dark .logo {
+  color: #f1f5f9;
+}
+
 .nav-links a:hover,
 .nav-links button:hover {
   color: #10b981;
