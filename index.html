@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="AI Powered Portfolio by Akash Masram" />
+  <meta name="keywords" content="Akash Masram, Web Developer, MERN, Portfolio, Frontend Developer" />
+  <meta name="author" content="Akash Masram" />
+  <meta property="og:title" content="Akash Masram Portfolio" />
+  <meta property="og:description" content="Modern developer portfolio with chatbot, projects, and skills." />
+  <meta property="og:image" content="assets/images/preview.png" />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="icon" href="assets/images/favicon.ico" type="image/x-icon" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet" />
+
+  <title>Akash Masram | Portfolio</title>
+</head>
+
+<body>
+  <header>
+    <nav class="nav">
+      <div class="logo">Akash Masram</div>
+      <ul class="nav-links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#work">Work</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li>
+          <button id="toggleTheme" class="theme-toggle" aria-label="Toggle Theme">
+            <i id="themeIcon" class="fas fa-moon"></i>
+          </button>
+        </li>
+
+      </ul>
+    </nav>
+  </header>
+
+  <section id="hero" class="hero" data-aos="fade-up">
+    <div class="hero-content">
+      <h1>Hello, I'm <span class="highlight">Akash Masram</span></h1>
+      <h2><span id="typing"></span></h2>
+      <a href="#about" class="btn">About Me</a>
+
+      <div class="social-icons">
+        <a href="https://www.linkedin.com/feed/?trk=guest_homepage-basic_google-one-tap-submit" target="_blank"
+          aria-label="LinkedIn">
+          <i class="fab fa-linkedin-in"></i>
+        </a>
+        <!-- <a href="https://github.com/yourprofile" target="_blank" aria-label="GitHub">
+          <i class="fab fa-github"></i>
+        </a> -->
+        <a href="mailto:akashmasramakt@gmail.com" aria-label="Gmail">
+          <i class="fas fa-envelope"></i>
+        </a>
+        <a href="https://www.instagram.com/akashak1514/" target="_blank" aria-label="Instagram">
+          <i class="fab fa-instagram"></i>
+        </a>
+      </div>
+    </div>
+    <div class="hero-image">
+      <img src="assets/images/akash.png" alt="Akash Masram Photo" />
+    </div>
+  </section>
+
+  <section id="about" class="about" data-aos="fade-up">
+    <h2>About Me</h2>
+    <div class="about-flex">
+      <div class="about-image">
+        <img src="assets/images/akash.png" alt="Akash Masram" />
+      </div>
+      <div class="about-info">
+        <h3>I'm a MERN Stack Developer & Web Developer</h3>
+        <p>I specialize in building full-stack web applications using MongoDB, Express.js, React, and Node.js. I also
+          create clean and responsive UIs with HTML, CSS, and JavaScript. Passionate about learning new technologies and
+          delivering user-friendly experiences.
+        </p>
+        <a href="assets/resume.pdf" download class="btn">Download Resume</a>
+
+      </div>
+    </div>
+  </section>
+
+  <section id="work" class="work" data-aos="fade-up">
+    <h2>Work Experience</h2>
+    <div class="work-timeline" >
+      <div class="work-item" data-aos="fade-left">
+        <h3>Amplemind Pvt Ltd</h3>
+        <p><strong>Duration:</strong> January 2024 - June 2024</p>
+        <p><strong>Role:</strong> Intern - MERN Stack Developer</p>
+        <p>Worked on full-stack development projects using MongoDB, Express.js, React, and Node.js. Contributed to
+          building scalable web applications and improved UI/UX.</p>
+      </div>
+      <div class="work-item" data-aos="fade-left">
+        <h3>Cojag Smart Technology Pvt Ltd</h3>
+        <p><strong>Duration:</strong> July 2024 - March 2025</p>
+        <p><strong>Role:</strong> Intern - MERN Stack Developer</p>
+        <p>Involved in end-to-end development of web solutions using the MERN stack. Gained hands-on experience in
+          creating APIs, managing databases, and designing responsive frontends.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="projects" class="projects" data-aos="fade-up">
+    <h2>Featured Projects</h2>
+
+    <div class="project-flex" >
+      <div class="project-image">
+        <img src="assets/images/project1.webp" alt="AI Portfolio Project" />
+      </div>
+      <div class="project-info">
+        <h3>Portfolio Website</h3>
+        <p>Modern personal portfolio designed and built using HTML, CSS, and JavaScript. Fully responsive layout with
+          clean UI showcasing developer profile and projects.
+        </p>
+      </div>
+    </div>
+
+    <div class="project-flex reverse" > 
+      <div class="project-image">
+        <img src="assets/images/Weather-Api.jpg" alt="Weather App Project" />
+      </div>
+      <div class="project-info">
+        <h3>Weather App</h3>
+        <p>Simple weather application built using Html, CSS, JavaScript and OpenWeatherMap API. It fetches live weather
+          and updates
+          UI dynamically with minimal design.</p>
+      </div>
+    </div>
+
+    <div class="project-flex" >
+      <div class="project-image">
+        <img src="assets/images/project3.jpg" alt="E-commerce Project" />
+      </div>
+      <div class="project-info">
+        <h3>E-commerce Platform</h3>
+        <p>Complete MERN Stack application: React, Node.js, Express & MongoDB with secure authentication, product
+          management, and admin dashboard.</p>
+      </div>
+    </div>
+  </section>
+
+
+
+
+  <section id="skills" class="skills" data-aos="fade-up">
+    <h2>Technical Skills</h2>
+
+    <div class="skills-container">
+
+      <div class="skills-group">
+        <h3><i class="fas fa-code"></i> Frontend</h3>
+        <div class="skill-bar"><span>HTML</span>
+          <div class="bar">
+            <div class="fill" style="width: 90%"></div>
+          </div>
+        </div>
+        <div class="skill-bar"><span>CSS</span>
+          <div class="bar">
+            <div class="fill" style="width: 85%"></div>
+          </div>
+        </div>
+        <div class="skill-bar"><span>JavaScript</span>
+          <div class="bar">
+            <div class="fill" style="width: 80%"></div>
+          </div>
+        </div>
+        <div class="skill-bar"><span>React</span>
+          <div class="bar">
+            <div class="fill" style="width: 75%"></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="skills-group" data-aos="fade-up">
+        <h3><i class="fas fa-server"></i> Backend</h3>
+        <div class="skill-bar"><span>Node.js</span>
+          <div class="bar">
+            <div class="fill" style="width: 70%"></div>
+          </div>
+        </div>
+        <div class="skill-bar"><span>Express.js</span>
+          <div class="bar">
+            <div class="fill" style="width: 70%"></div>
+          </div>
+        </div>
+        <div class="skill-bar"><span>MongoDB</span>
+          <div class="bar">
+            <div class="fill" style="width: 65%"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" class="contact" data-aos="fade-up">
+    <h2>Let's Connect</h2>
+    <form id="contactForm">
+      <input type="text" name="user_name" placeholder="Your Name" required />
+      <input type="email" name="user_email" placeholder="Your Email" required />
+      <textarea name="message" placeholder="Your Message" required></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+
+  </section>
+
+  <footer class="footer">
+    <p>&copy; 2025 Akash Masram. All rights reserved.</p>
+    <div class="footer-icons">
+      <a href="https://www.linkedin.com/feed/?trk=guest_homepage-basic_google-one-tap-submit" target="_blank"
+        aria-label="LinkedIn">
+        <i class="fab fa-linkedin-in"></i>
+      </a>
+      <a href="https://github.com/yourprofile" target="_blank" aria-label="GitHub">
+        <i class="fab fa-github"></i>
+      </a>
+      <a href="mailto:akashmasramakt@gmail.com" aria-label="Gmail">
+        <i class="fas fa-envelope"></i>
+      </a>
+      <a href="https://www.instagram.com/akashak1514/" target="_blank" aria-label="Instagram">
+        <i class="fab fa-instagram"></i>
+      </a>
+  </footer>
+
+  <button id="scrollTopBtn" title="Go to top">↑</button>
+
+  <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+  <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+  <script src="script.js"></script>
+  </script>
+</body>
+
+</html>
