@@ -10,6 +10,7 @@ body {
   background-color: #f9fafb;
   color: #0f172a;
   line-height: 1.6;
+  overflow-x: hidden;
 }
 
 :root {
@@ -62,6 +63,65 @@ body.dark .nav {
   text-decoration: none;
   transition: color 0.3s;
 }
+
+/* Hamburger visible on mobile */
+.menu-toggle {
+  display: none;
+  background: none;
+  border: none;
+  font-size: 1.5rem;
+  color: #0f172a;
+  cursor: pointer;
+}
+
+body.dark .menu-toggle {
+  color: #f1f5f9;
+}
+
+/* Slide-in navbar */
+@media (max-width: 768px) {
+  .menu-toggle {
+    display: block;
+    z-index: 1001;
+  }
+
+  .nav-links {
+    position: fixed;
+    top: 0;
+    right: -100%;
+    height: 100%;
+    width: 260px;
+    background-color: #ffffff;
+    flex-direction: column;
+    /* justify-content: center;
+    align-items: center; */
+    gap: 1.5rem;
+    padding: 5rem;
+    transition: right 0.4s ease;
+    box-shadow: -4px 0 12px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+  }
+
+  .nav-links.open {
+    right: 0;
+  }
+
+  .nav-links li {
+    padding: 0.5rem 0;
+    width: 100%;
+    text-align: center;
+  }
+
+  body.dark .nav-links {
+    background-color: #0f172a;
+  }
+
+  body.dark .nav-links li {
+    border-color: #334155;
+  }
+}
+
+
 
 body.dark .nav-links a,
 body.dark .nav-links button {
@@ -176,6 +236,27 @@ body.dark .hero-content h2 {
 .social-icons a:hover {
   color: #10b981;
   transform: scale(1.2);
+}
+
+
+@media (max-width: 768px) {
+  .hero {
+    flex-direction: column-reverse;
+    padding: 2rem 1.2rem;
+    text-align: center;
+    overflow-x: hidden; /* Just to be extra safe */
+  }
+
+  .hero-image img {
+    max-width: 100%;
+    width: 100%;
+    height: auto;
+  }
+
+  .social-icons {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
 }
 
 /* ===== About Section ===== */

@@ -55,3 +55,32 @@ AOS.init({
   duration: 800,
   once: true
 });
+
+
+const menuToggle = document.getElementById("menuToggle");
+const navLinks = document.getElementById("navLinks");
+
+menuToggle.addEventListener("click", () => {
+  navLinks.classList.toggle("open");
+});
+
+document.querySelectorAll(".nav-links a").forEach(link => {
+  link.addEventListener("click", () => {
+    navLinks.classList.remove("open");
+  });
+});
+
+
+document.addEventListener("DOMContentLoaded", function () {
+  if (window.innerWidth < 768) {
+    const workItems = document.querySelectorAll('#work .work-item');
+
+    workItems.forEach((item) => {
+      if (item.getAttribute("data-aos") === "fade-left") {
+        item.setAttribute("data-aos", "fade-up");
+      }
+    });
+  }
+
+  AOS.init(); // reinitialize AOS after changes
+});

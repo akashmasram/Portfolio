@@ -19,7 +19,7 @@
 </head>
 
 <body>
-  <header>
+  <!-- <header>
     <nav class="nav">
       <div class="logo">Akash Masram</div>
       <ul class="nav-links">
@@ -37,7 +37,33 @@
 
       </ul>
     </nav>
+  </header> -->
+
+  <header>
+    <nav class="nav">
+      <div class="logo">Akash Masram</div>
+
+      <!-- Hamburger Menu Button -->
+      <button class="menu-toggle" id="menuToggle" aria-label="Toggle Menu">
+        <i class="fas fa-bars"></i>
+      </button>
+
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#work">Work</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li>
+          <button id="toggleTheme" class="theme-toggle" aria-label="Toggle Theme">
+            <i id="themeIcon" class="fas fa-moon"></i>
+          </button>
+        </li>
+      </ul>
+    </nav>
   </header>
+
 
   <section id="hero" class="hero" data-aos="fade-up">
     <div class="hero-content">
@@ -50,9 +76,6 @@
           aria-label="LinkedIn">
           <i class="fab fa-linkedin-in"></i>
         </a>
-        <!-- <a href="https://github.com/yourprofile" target="_blank" aria-label="GitHub">
-          <i class="fab fa-github"></i>
-        </a> -->
         <a href="mailto:akashmasramakt@gmail.com" aria-label="Gmail">
           <i class="fas fa-envelope"></i>
         </a>
@@ -86,7 +109,7 @@
 
   <section id="work" class="work" data-aos="fade-up">
     <h2>Work Experience</h2>
-    <div class="work-timeline" >
+    <div class="work-timeline">
       <div class="work-item" data-aos="fade-left">
         <h3>Amplemind Pvt Ltd</h3>
         <p><strong>Duration:</strong> January 2024 - June 2024</p>
@@ -107,7 +130,7 @@
   <section id="projects" class="projects" data-aos="fade-up">
     <h2>Featured Projects</h2>
 
-    <div class="project-flex" >
+    <div class="project-flex" data-aos="fade-up">
       <div class="project-image">
         <img src="assets/images/project1.webp" alt="AI Portfolio Project" />
       </div>
@@ -119,7 +142,7 @@
       </div>
     </div>
 
-    <div class="project-flex reverse" > 
+    <div class="project-flex reverse" data-aos="fade-up">
       <div class="project-image">
         <img src="assets/images/Weather-Api.jpg" alt="Weather App Project" />
       </div>
@@ -131,7 +154,7 @@
       </div>
     </div>
 
-    <div class="project-flex" >
+    <div class="project-flex" data-aos="fade-up">
       <div class="project-image">
         <img src="assets/images/project3.jpg" alt="E-commerce Project" />
       </div>
